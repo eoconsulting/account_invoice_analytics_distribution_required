@@ -9,6 +9,7 @@ in Settings > Configuration > Parameter > Configuration Parameters:
 
     Name: "analytics_distribution_default"
     Field: Analytic Distribution (model Invoice Line)
+    Type: Integer
     Value: the id of the distribution model object
 
 Author:
