@@ -23,9 +23,9 @@ from osv import fields, osv
 
 def _get_property_value(obj, cr, uid, context={}):
     property_obj = obj.pool.get('ir.property')
-    prop_ids = property_obj.search(cr, uid, [('name', '=', 'analytics_distribution_default')])
+    prop_ids = property_obj.search(cr, uid, [('name', '=', 'analytics_distribution_default')],context=context)
     if len(prop_ids)>0:
-        return property_obj.read(cr,uid,prop_ids[0],['value_integer'])['value_integer']
+        return property_obj.read(cr,uid,prop_ids[0],['value_integer'],context=context)['value_integer']
     return False
 
 class account_invoice_line(osv.osv):
