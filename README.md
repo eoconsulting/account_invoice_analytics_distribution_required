@@ -1,6 +1,8 @@
 Account invoice analytics distribution required
 ===============================================
 
+**This project has been moved to https://launchpad.net/~eoc**
+
 OpenERP module that make invoice analytics distribution account required
 in sale invoice line.
 
